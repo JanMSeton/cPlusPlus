@@ -1,0 +1,10 @@
+file: size
+commandsUsed.txt: 138
+fileSizes.txt: 150
+hello: 14472
+hello.cc: 71
+hello.o: 1896
+iostream: 3024
+output.txt: 13
+shortDescriptions.txt: 378
+
