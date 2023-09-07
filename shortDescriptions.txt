@@ -1,0 +1,6 @@
+The object file contains all the code from the program translated in assembly.
+It needs to be linked with the headerfiles it useses by a linker before it can be executed.
+
+The executable file is tthe object file after it has been linked to the headerfiles.
+It can be executed on a computer, because all the headerfiles it uses can be linked. 
+The file is written in machinecode.

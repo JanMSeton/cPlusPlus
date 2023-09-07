@@ -1,0 +1,5 @@
+g++ -o hello -s --std=c++23 -Wall --pedantic -Werror hello.cc
+g++ -c --std=c++23 -Wall --pedantic -Werror hello.cc
+./hello > output.txt
+
+
