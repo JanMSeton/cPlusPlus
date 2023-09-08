@@ -1,0 +1,4 @@
+Redirection is when a program reads or writes from or to a file.
+In the case of  "program < in > out", the program will read input from in and write output to out.
+Piping is when a program passes output as a command to another program. 
+In the case of "program | less", the output of program will be passed to less as a command for less.
