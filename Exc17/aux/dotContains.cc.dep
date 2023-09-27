@@ -1,0 +1,2 @@
+aux/dotContains.o: aux/dotContains.cc aux/aux.ih
+aux/aux.ih:

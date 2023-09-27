@@ -1,0 +1,3 @@
+main.o: main.cc main.ih aux/d_aux.hh
+main.ih:
+aux/d_aux.hh:
