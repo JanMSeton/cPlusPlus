@@ -1,7 +1,7 @@
-#include "Line.hh"
+#include "line.hh"
 
-bool Line::getLine(istream &in)
+bool Line::getLine()
 {
-    getline(in, Line::d_currentString);
-    return d_currentString.contains(" \t")
+    getline(std::cin, Line::d_currentString);
+    return d_currentString.contains(" \t");
 }

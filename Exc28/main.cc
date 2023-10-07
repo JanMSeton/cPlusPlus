@@ -2,10 +2,10 @@
 
 int main (int argc, char **argv)
 {
-    cin << line;
-    while (getLine)
+    Line myLine;
+    while (myLine.getLine(std:: cin))
     {
-        Line::start += next(start).length()
+        Line::start += next(Line::start).length()
     }
 
 }

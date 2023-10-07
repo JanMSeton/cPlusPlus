@@ -1,0 +1,14 @@
+#include "parser.ih"
+
+bool Parser::PureDouble(double *dest, std::string const &str)
+{
+    *dest = stod(&str, *pos = 1);
+    if (*pos == str.npos)
+    {
+        (str.contains.find_first_of(".eE"))?
+        d_integral = false:
+        d_integral = true;
+        return true;
+    }
+    return false;
+}

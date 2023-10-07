@@ -6,13 +6,15 @@
 
 class Line
 {   std::string d_currentString;
-    size_t start = 0;
+    size_t d_position;
+    
 
     public:
-        bool getLine(std::istream &in);
-        std::string next(size_t start);
+        bool getLine();
+        std::string next();
+        
 
-}
+};
 
 
 

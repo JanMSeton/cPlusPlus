@@ -1,4 +1,6 @@
 #include <string>
 #include <iostream>
 #include <cstddef>
-#include "Line.hh"
+#include "class/Line.hh"
+
+using namespace std;
