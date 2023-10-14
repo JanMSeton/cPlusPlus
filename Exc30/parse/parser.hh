@@ -1,6 +1,6 @@
 #ifndef PARSE_HH_
 #define PARSE_HH_
-#include "../../Exc28/class/line.hh"
+#include "../class/line.hh"
 
 class Parser
 {   

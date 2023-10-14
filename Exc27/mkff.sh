@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name=$"calc"
+name=$"useClass"
 
 # Make sure we have no name conflicts
 if [ -d $name ]; then

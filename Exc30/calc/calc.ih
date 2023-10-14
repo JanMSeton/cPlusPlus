@@ -1,6 +1,9 @@
-#include <string>
 #include <iostream>
 #include <cstddef>
-#include "class/line.hh"
+#include <string>
+#include <cmath>
+
+#include "calc.hh"
+
 
 using namespace std;

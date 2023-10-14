@@ -2,9 +2,8 @@
 
 Parser::Return Parser::number(double *dest)
 {   
-    std::string test;
-    test = d_line.next();
-    return (test == "")?
+    string str{ next() }
+    return (str.empty())?
     EOLN:
-    convert(dest, d_line.next());
+    convert(dest, str);
 }

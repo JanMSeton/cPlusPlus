@@ -1,0 +1,3 @@
+
+CopyCat/CopyCat.hh
+CopyCat/CopyCat.ih

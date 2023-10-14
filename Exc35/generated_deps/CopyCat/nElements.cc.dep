@@ -1,0 +1,2 @@
+CopyCat/nElements.cc.o: CopyCat/nElements.cc CopyCat/CopyCat.ih \
+ CopyCat/CopyCat.hh

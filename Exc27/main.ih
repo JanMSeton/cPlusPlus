@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+#include <cstddef>
+
+
+#include "class/person.hh"
+
+
+
+void read(Person person[], size_t size);
+void write(Person person[], size_t size);
+
+using namespace std;

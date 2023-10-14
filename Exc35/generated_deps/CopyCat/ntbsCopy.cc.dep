@@ -1,0 +1,2 @@
+CopyCat/ntbsCopy.cc.o: CopyCat/ntbsCopy.cc CopyCat/CopyCat.ih \
+ CopyCat/CopyCat.hh

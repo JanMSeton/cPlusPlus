@@ -1,6 +1,5 @@
 #include <string>
 #include <iostream>
-#include <cstddef>
-#include "class/line.hh"
+#include "CopyCat.hh"
 
 using namespace std;

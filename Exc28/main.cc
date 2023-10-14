@@ -2,10 +2,25 @@
 
 int main (int argc, char **argv)
 {
-    Line myLine;
-    while (myLine.getLine(std:: cin))
+    Line l;
+    string output;
+    size_t i = 0;
+    while(l.getLine())
     {
-        Line::start += next(Line::start).length()
+        cout << "Here " << i << '\n';
+        while (1)
+        {
+            output = l.next();
+            if (output == "")
+            {
+                break;
+            }
+            cout << output << '\n';
+            cout << "Here " << i << '\n';
+            ++i;
+        }
     }
+    cout << "Finished\n";
 
+    return 0;
 }
