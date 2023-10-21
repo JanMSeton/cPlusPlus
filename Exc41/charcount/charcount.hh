@@ -44,7 +44,6 @@ struct CharCount            // struct, as CharCount defines public types
                                         // for the exercise)
         
     private:
-        void process(char ch);
         Action locate(size_t *idx, char ch);
         void inc(char ch, size_t idx);
         void insert(char ch, size_t idx);
