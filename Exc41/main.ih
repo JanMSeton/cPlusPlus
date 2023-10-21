@@ -1,0 +1,8 @@
+#include <cctype>               // for isprint()
+#include <iostream>
+
+#include "charcount/charcount.hh"
+
+void showChar(char ch);
+
+using namespace std;

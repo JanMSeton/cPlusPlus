@@ -1,0 +1,2 @@
+charcount/append.cc.o: charcount/append.cc charcount/charcount.ih \
+ charcount/charcount.hh

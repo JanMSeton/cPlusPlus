@@ -1,0 +1,6 @@
+#include "charcount.hh"
+
+#include <istream>
+#include <memory>
+
+using namespace std;

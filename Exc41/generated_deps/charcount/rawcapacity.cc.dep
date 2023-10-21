@@ -1,0 +1,2 @@
+charcount/rawcapacity.cc.o: charcount/rawcapacity.cc \
+ charcount/charcount.ih charcount/charcount.hh

@@ -1,0 +1,1 @@
+main3.cc.o: main3.cc main.ih strings/strings.h
