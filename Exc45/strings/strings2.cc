@@ -7,6 +7,6 @@ Strings::Strings(int argc, char *argv[])
     
     
 {
-    d_arr = new string*[argc];
+    d_memory = rawStrings(argc);
     fill(argv);
 }

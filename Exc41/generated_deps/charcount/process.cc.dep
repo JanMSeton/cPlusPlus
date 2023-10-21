@@ -1,2 +1,0 @@
-charcount/process.cc.o: charcount/process.cc charcount/charcount.ih \
- charcount/charcount.hh

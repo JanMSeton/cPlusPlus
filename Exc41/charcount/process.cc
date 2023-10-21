@@ -1,19 +1,9 @@
 #include "charcount.ih"
 
-void CharCount::process(char ch)// improve
+void (CharCount::* CharCount::s_process[])(char ch, size_t idx)
 {
-    switch (size_t idx; locate(&idx, ch))
-    {
-        case APPEND:
-            append(ch);
-        break;
+    &CharCount::append,
+    &CharCount::insert,
+    &CharCount::inc
 
-        case INSERT:
-            insert(ch, idx);            // insert new entry at index `idx'
-        break;
-
-        case INC:
-            inc(idx);
-        break;
-    }
-}
+};

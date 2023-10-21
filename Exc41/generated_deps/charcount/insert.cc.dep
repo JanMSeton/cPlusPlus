@@ -1,2 +1,0 @@
-charcount/insert.cc.o: charcount/insert.cc charcount/charcount.ih \
- charcount/charcount.hh

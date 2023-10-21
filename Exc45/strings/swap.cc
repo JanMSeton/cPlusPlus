@@ -2,9 +2,9 @@
 
 void Strings::swap(Strings &other)
 {
-    string **tmp = d_arr;
-    d_arr = other.d_arr;
-    other.d_arr = tmp;
+    string *tmp = d_memory;
+    d_memory = other.d_memory;
+    other.d_memory = tmp;
 
     size_t size = d_size;
     d_size = other.d_size;

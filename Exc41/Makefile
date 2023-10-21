@@ -112,7 +112,7 @@ ALL_FILES := $(patsubst ./%,%,$(call rwildcard,.,*))
 # Autodetection of file extensions.
 first_extension_found = $(patsubst .%,%,$(or $(firstword $(foreach X,$1,$(filter %.$X,$(suffix $(ALL_FILES))))),$(firstword $1)))
 
-CXXFLAGS += -Wall -Werror -std=c++23
+CXXFLAGS += -Wall -Werror -std=c++23 -g
 # -pedantic -fsanitize=address,leak,null,bounds,object-size,pointer-overflow,undefined -fanalyzer -Wno-unused-variable -Wstrict-aliasing'
 #LDFLAGS += -lrt -ldl -lpthread -lm -lz -ltinfo
 

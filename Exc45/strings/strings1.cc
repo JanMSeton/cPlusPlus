@@ -6,6 +6,6 @@ Strings::Strings()
     d_capacity(1)
     
 {
-    d_arr = new string*[1];
-    cout << "Alloc d_arr = new string*[1]\n";
+    d_memory = rawStrings(1);
+    cout << "Alloc d_memory = rawStrings(1)\n";
 }

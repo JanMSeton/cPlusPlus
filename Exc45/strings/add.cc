@@ -10,6 +10,6 @@ void Strings::add(string const &next)
     }   
     resize(d_size + 1);
 
-    *(d_arr[d_size - 1]) = next;                 // store next
+    d_memory[d_size - 1] = next;                 // store next
 
 }

@@ -1,1 +1,0 @@
-showchar.cc.o: showchar.cc main.ih charcount/charcount.hh

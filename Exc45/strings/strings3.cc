@@ -7,6 +7,6 @@ Strings::Strings(char *environLike[])
     
     
 {
-    d_arr = new string*[d_size];
+    d_memory = rawStrings(d_size);
     fill(environLike);
 }

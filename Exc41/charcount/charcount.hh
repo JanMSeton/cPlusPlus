@@ -5,18 +5,22 @@
 
 struct CharCount            // struct, as CharCount defines public types
 {
-    struct Char
-    {
-        char ch;
-        size_t count;
-    };
+    private:
+        size_t d_capacity = 4; // how many char objects can we store
 
-    struct CharInfo
-    {
-        Char *ptr;
-        size_t nCharObj; // how many char objects do we have right now
-        
-    };
+    public:
+        struct Char
+        {
+            char ch;
+            size_t count;
+        };
+
+        struct CharInfo
+        {
+            Char *ptr;
+            size_t nCharObj; // how many char objects do we have right now
+            
+        };
 
     
 
@@ -28,8 +32,8 @@ struct CharCount            // struct, as CharCount defines public types
             INC
         };
 
-        CharInfo d_info = { enlarge(4), 0 };
-
+        CharInfo d_info = { enlarge() , 0 };
+        static void (CharCount::*s_process[])(char ch, size_t idx);
     public:
         size_t count(std::istream &in);
         CharInfo const &info() const;
@@ -42,17 +46,17 @@ struct CharCount            // struct, as CharCount defines public types
     private:
         void process(char ch);
         Action locate(size_t *idx, char ch);
-        void inc(size_t idx);
+        void inc(char ch, size_t idx);
         void insert(char ch, size_t idx);
-        void append(char ch);            // in fact:insert at d_nfo.nCharObj
+        void append(char ch, size_t idx);            // in fact:insert at d_nfo.nCharObj
         
 
         void transfer(Char *dest, size_t begin, size_t end);
-        void transfer(Char *dest, size_t begin, size_t end, size_t step); //transfers element by step in array
-
-        size_t d_capacity; // how many char objects can we store
+        void transferWithin(size_t begin, size_t end);
+        
         Char *rawCapacity(size_t d_capacity);
-        Char *enlarge(size_t d_capacity); // doubles capacity
+        Char *enlarge(); // doubles capacity
+        void destroy();
 };
 
 inline CharCount::CharInfo const &CharCount::info() const

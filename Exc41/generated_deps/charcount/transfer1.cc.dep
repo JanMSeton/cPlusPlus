@@ -1,2 +1,0 @@
-charcount/transfer1.cc.o: charcount/transfer1.cc charcount/charcount.ih \
- charcount/charcount.hh

@@ -4,13 +4,14 @@ void Strings::reserve(size_t request)
 {
     if (request > d_capacity)
     {
-        string **newStrings = rawPointers(request);
-        for(size_t index = 0; index!= d_size; ++index)
+        string *newStringsBlock = rawStrings(request);
+        for (size_t idx = 0; idx != d_size; ++idx)
         {
-            newStrings[index] = d_arr[index];
+            new (newStringsBlock + idx) string{ d_memory[idx] };
         }
+
         destroy();
-        d_arr = newStrings;
+        d_memory = newStringsBlock;
         d_capacity = request;
         
     }

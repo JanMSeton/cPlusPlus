@@ -2,6 +2,7 @@
 
 CharCount::Action CharCount::locate(size_t *destIdx, char ch)
 {
+    cout << "In locate(): Search for " << ch << ", uCh = "<< static_cast<int>(ch) << "\n";
                                     // caveat: the cast is required to protect
                                     // negative char values from being 
                                     // converted to very high size_t values
@@ -14,6 +15,7 @@ CharCount::Action CharCount::locate(size_t *destIdx, char ch)
         size_t available = static_cast<unsigned char>(
                                 d_info.ptr[idx].ch
                             );
+        cout << "Avaliable = static_cast<unsigned char>(" << d_info.ptr[idx].ch <<") = "<< available << "\n";
 
                                             // find the position of uCh in 
                                             // the set of available chars
