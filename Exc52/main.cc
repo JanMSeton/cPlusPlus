@@ -5,9 +5,10 @@ using namespace std;
 
 ostream &now(ostream& outs)
 {
-    time_t t = system_clock::to_time_t( system_clock{}.now());
+    time_t t = time(0);
+    tm tm = *localtime(&t);
 
-    return outs << put_time(&t, "%c %Z");
+    return outs << put_time(&tm, "%c %Z");
 }
 
 
